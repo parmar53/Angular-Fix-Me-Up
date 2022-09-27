@@ -60,6 +60,28 @@ TODO: 12. something's off with this include
 //@import "theme" is the solution and because that link() is working properly.
 
 TODO: 13. Angular (NX) Architecture:- Task Remaining
+//Steps which I followd, Lastlt I opted for Manul migration
+Two ways to migrate angular cli to nx
+
+1. automatic
+2. manual 
+
+1. Automatic
+-> ng add @nrwl/angular --preserve-angular-cli-layout
+-> ng add @nrwl/workspace_name@13.5.0 --preserveAngularCLILayout
+-> installs the nx and @nrwl/workspace packages.
+-> ng add @nrwl/angular
+
+2. Migrate Manually
+-> npm init nx-workspace myorg --preset=angular
+-> application name,  = > current json file 
+-> copy all files manually like appls, lib and shared
+-> ng serve <app name>
+
+
+
+
+
 
 TODO: 14. fix the deprecation
 //Fixed the color and changed tag into its value
