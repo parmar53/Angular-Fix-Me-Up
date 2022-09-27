@@ -1,0 +1,28 @@
+@import "theme";
+
+section {
+  height: 40px;
+  background: $brand-bg-alt;
+  color: $brand-sidenav-color;
+  padding-right: $brand-padding;
+  padding-left: $brand-padding;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // margin-block-start: 29.1%;
+}
+
+// TODO: 11. The Last Link is only suppose to be offset from the side of the screen
+// by 20px, what can we do to fix this
+//Here imported theme instead of use and unlinked "theme" from the background, padding-right, and padding-left 
+//So, all three links are set 
+
+.nav-offsite {
+  a {
+    // TODO: 12. something's off with this include
+    //@import "theme" is the solution and because that link() is working properly.
+    
+    @include link();
+    color: $brand-sidenav-color;
+  }
+}

@@ -1,0 +1,16 @@
+@import "theme";
+
+// TODO: 14. fix the deprecation
+//Fixed the color and changed tag into its value
+.sidenav {
+  @include link();
+  padding-top: $unit;
+  padding-bottom: $unit;
+  display: inline-block;
+  
+  &:hover {
+    background: $brand-bg;
+    color: $brand-sidenav-color;
+    transition: 0.3s;
+  }
+}

@@ -1,0 +1,20 @@
+// TODO: 5. Fixing one thing may break other things, but sometimes it has to be done
+//Fixed the styling of table and its components
+@import "../styles.scss";
+
+.mainDiv {
+  // try to keep these
+  display: grid;
+  grid-template-rows: 40px 1fr 40px;
+  min-height: 100vh;
+  // don't  really care about the below
+  
+  // padding-left: 20px;
+  // padding-right: 20px;
+
+ .table{
+  padding-left: 20px;
+  //padding-top: 20px;
+ }
+
+}

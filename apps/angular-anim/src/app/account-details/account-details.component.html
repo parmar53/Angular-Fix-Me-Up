@@ -1,0 +1,24 @@
+<h1>Account Details</h1>
+
+<table class="table table-hover">
+  <tbody class="border">
+      <tr>
+        <th scope="col" class="thead-light">Account ID: </th>
+        <td scope="col">{{currAccount['id']}}</td>
+      </tr>
+
+      <tr>
+        <th scope="col" class="thead-light">Account Balance: </th>
+        <td scope="col">{{currAccount['balance']}} {{currAccount['currency']}}</td>
+      </tr>
+
+      <tr>
+        <th scope="col" class="thead-light">Account Type: </th>
+        <td scope="col"> {{currAccount['currency']}}</td>
+      </tr>
+    </tbody>
+    
+  </table>
+
+<!-- TODO: how to retrieve account id and other account details in this route? -->
+<!-- Retrieved all account details through subscribe in the account.details.component.ts file -->
